@@ -39,5 +39,5 @@ def update(request):
   
     messages.success(request,"Details updated succesfully")
 
-    return HttpResponseRedirect('/welcome/')
+    return HttpResponseRedirect('/')
     
