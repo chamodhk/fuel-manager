@@ -1,7 +1,7 @@
 
 
 
-x
+
 <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
 ">
 {% extends 'html/base.html' %}
@@ -14,7 +14,7 @@ x
 
     <h3>Fuel Quota exceeded!
     </h3>    
-    <div class="progress" >
+    <div class="progress" style="color:black">
                 
         <div class="progress-bar bg-warning" role="progressbar" style="width: 100%; " aria-valuenow="{{quota}}" aria-valuemin="0" aria-valuemax="{{ quota }}">{{percentage}}% used</div>
       </div>
@@ -28,7 +28,7 @@ x
     
         <form action="/update/" method="post">{% csrf_token %}
             <h4 style="margin-bottom:10%;margin-top: 10%;margin-left: 5%;">Available fuel quota for this vehicle is {{available}} liters! </h4>
-            <div class="progress" style="margin-bottom: 5%" >
+            <div class="progress" style="margin-bottom: 5%; color="black" >
                 
                 <div class="progress-bar" role="progressbar" style="width: {{percentage}}%; " aria-valuenow="{{ available }}" aria-valuemin="0" aria-valuemax="{{ quota }}" > {{ percentage }}% used
                 </div>
