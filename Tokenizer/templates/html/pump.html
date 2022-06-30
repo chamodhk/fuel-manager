@@ -33,7 +33,7 @@
                 <div class="progress-bar" role="progressbar" style="width: {{percentage}}%; " aria-valuenow="{{ available }}" aria-valuemin="0" aria-valuemax="{{ quota }}" > {{ percentage }}% used
                 </div>
               </div>
-            <input class="form-control mb-3" type="number" name="number" id="number" min="0" max="{{ available }}" width="100px">
+            <input class="form-control mb-3" type="number" name="number" id="number" min="0" max="{{ available }}" width="100px" required>
             <input type="hidden" name="reg_number" value="{{reg}}" >
             <center><input type="submit" value="Pumped!" class="btn btn-primary btn-lg" style="margin-top: 5%;"></form>
             </center>
