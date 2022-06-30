@@ -19,7 +19,7 @@ from vehicle_tokenizer.views import check_vehicle, welcome,update
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('welcome/',welcome),
+    path('',welcome),
     path('check/',check_vehicle),
     path('update/',update)
 ]
